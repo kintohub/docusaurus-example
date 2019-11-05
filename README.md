@@ -3,64 +3,44 @@
 ## Overview
 Docusaurus can be used as a framework to quickly generation documentation for your products. Its best to generate a static website and service Docusaurus on a CDN and custom hostname which can easily be done with KintoHub!
 
+[View Live Example](...)
+
 __About KintoHub:__
 
 KintoHub aligns teams to ship & operate cloud native apps with ease. [Learn More](https://www.kintohub.com)
 
 ## Deployment
 1. Apply this template to your [Github](https://github.com/kintohub/docusaurus-example/generate)
-2. Create a [KintoBlockType](https://beta.kintohub.com/app/dashboard/) and include:
+2. Create a [Website KintoBlock](https://beta.kintohub.com/app/dashboard/)
+4. Set the **name** of your kinto block
+5. Choose **Static from build** as your type
+6. Choose `Node.js` as the **language** and `11.7.0` as the **version**
+7. Set the **Build Command** as `cd /app/website && npm install && npm run build`
+8. Set the **Build Output Folder** as `/website/build/test-site/` (NOTE: You must have the trailing slash at the moment)
 
-You're now good to build! Click `Build Latest Commit`. Once complete, Click  Now click `Add To Project`.
+You're now good to go! Click **Create Website**. Now click **Build Latest Commit**
 
-3. Create Project and include:
+... The build takes about 2 minutes. Once complete, Click *Add to Project*
 
+Follow the instruction to creating a new project. Once created, you can then click *Open* on your Docusaurus block and see it running live!
 
-You're ready to go live Click `Deploy`
-
-## Build & Deployment Configurations
-Use the following examples for build or deployment environment variables:
-
-* [.build-example](/.build-example)
-* [.env-dev](/.env-dev)
-* [.env-prod](/.env-dev)
 
 ## Installation & Local Run
+Ensure you have the latest node installed
 
-1. npm install?
-2. npm run prod?
+1. `cd /website`
+2. `npm install`
+2. `npm run start`
+3. Your browser will automatically open with localhost:3000
 
 ## Test
 
-1. npm test
+1. `cd /website`
+2. `npm test`
 
+## What's Next?
 
-## Usage
-The following works with our [Live Example](live/example/endpoint):
+You can do a lot with KintoHub and your deployed application. Some helpful links for next steps that you may consider with this project.
 
-**API Call**
-```
-GET http://localhost:8080/hello
-```
-
-**Response**
-```
-{
-"hello": "world"
-}
-```
-
-## TODO: (Deleteme) Checklist
-
-- Create dev / prod example
-- Write clear instructions on how to add it to kintohub
-- (optional) write further instruction on how to fine tune it for production
-- Create tags for the example repository (kintohub, examples, related technologies)
-- Create new example on [kinto-docs](docs.kintohub.com) (add to sidebar + create new page)
-- Double check call URLs and ensure they are appropriate to your username
-
-__Common Snippets:__
-
-Below are common urls/instructions that could be copy/pasted in some examples. (KintoBlock links, instructions for HA on KintoHub, etc)
-
-Please create PR for future snippets.
+* [Creating multiple environments](https://docs.kintohub.com/docs/projects/environments)
+* [Setting a password to protect your work](https://docs.kintohub.com/docs/kintoblocks/websites#basic-auth-for-websites)
