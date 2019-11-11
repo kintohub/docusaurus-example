@@ -3,7 +3,7 @@
 ## Overview
 Docusaurus can be used as a framework to quickly generation documentation for your products. Its best to generate a static website and service Docusaurus on a CDN and custom hostname which can easily be done with KintoHub!
 
-[View Live Example](...)
+[View Live Example](https://docusaurus-example-1d0d2-8caf9.web.master.kintohub.com/)
 
 __About KintoHub:__
 
